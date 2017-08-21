@@ -1,9 +1,9 @@
-{
+﻿{
   "runtimes": {
     "win": {}
   },
   "dependencies": {
-    "NUnit": "3.5.0"
+    "NUnit": "3.7.1"
   },
   "frameworks": {
     "net451": {}

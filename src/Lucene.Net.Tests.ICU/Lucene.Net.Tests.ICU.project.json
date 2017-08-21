@@ -5,7 +5,7 @@
   "dependencies": {
     "icu.net": "54.1.1-alpha",
     "Icu4c.Win.Full.Lib": "54.2.0",
-    "NUnit": "3.5.0"
+    "NUnit": "3.7.1"
   },
   "frameworks": {
     "net451": {}
