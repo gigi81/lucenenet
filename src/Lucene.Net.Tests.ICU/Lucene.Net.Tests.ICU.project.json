@@ -3,8 +3,9 @@
     "win": {}
   },
   "dependencies": {
-    "NUnit": "3.5.0",
-    "icu.net": "54.1.1-alpha"
+    "icu.net": "54.1.1-alpha",
+    "Icu4c.Win.Full.Lib": "54.2.0",
+    "NUnit": "3.5.0"
   },
   "frameworks": {
     "net451": {}
