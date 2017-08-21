@@ -1,8 +1,9 @@
-{
+﻿{
   "runtimes": {
     "win": {}
   },
   "dependencies": {
+    "Icu4c.Win.Full.Lib": "54.2.0",
     "NUnit": "3.5.0"
   },
   "frameworks": {
