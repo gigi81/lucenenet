@@ -40,6 +40,7 @@ namespace Lucene.Net.Index
     using TestUtil = Lucene.Net.Util.TestUtil;
 
     [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class TestTermsEnum2 : LuceneTestCase
     {
         private Directory Dir;

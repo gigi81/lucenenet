@@ -46,6 +46,7 @@ namespace Lucene.Net.Index
 
     [SuppressCodecs("SimpleText", "Memory", "Direct")]
     [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class TestTermsEnum : LuceneTestCase
     {
         [Test]

@@ -47,6 +47,7 @@ namespace Lucene.Net.Search
     using TestUtil = Lucene.Net.Util.TestUtil;
 
     [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class TestNumericRangeQuery64 : LuceneTestCase
     {
         // distance of entries
