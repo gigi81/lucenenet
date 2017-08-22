@@ -22,7 +22,7 @@ init:
   - git config --global core.autocrlf input
 
 build_script:
-  - build.bat --Configuration:Release -v:{version} -pv:{version}
+  - build.bat --Configuration:Release -v:%APPVEYOR_BUILD_VERSION% -pv:%APPVEYOR_BUILD_VERSION%
   
 test_script:
   - build.bat --test
