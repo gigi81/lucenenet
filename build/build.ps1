@@ -193,7 +193,7 @@ task Test -depends InstallSDK, Restore -description "This task runs the tests" {
 			$testResultDirectory = "$test_results_directory\$framework\$testName"
 			Ensure-Directory-Exists $testResultDirectory
 
-			$testExpression = "$testExpression --result:$testResultDirectory\TestResult.xml --teamcity"
+			$testExpression = "$testExpression --result:$testResultDirectory\TestResult.xml"
 
 			if ($where -ne $null -and (-Not [System.String]::IsNullOrEmpty($where))) {
 				$testExpression = "$testExpression --where $where"
