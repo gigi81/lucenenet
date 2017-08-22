@@ -28,19 +28,5 @@ assembly_info:
   assembly_file_version: "{version}"
   assembly_informational_version: "{version}"
 
-# build platform, i.e. x86, x64, Any CPU. This setting is optional.
-platform: Any CPU
-
-# build Configuration, i.e. Debug, Release, etc.
-configuration: Release
-
-before_build:
-  - nuget restore Lucene.Net.sln
-  
-build:
-  parallel: true                   # enable MSBuild parallel builds
-  project: Lucene.Net.sln          # path to Visual Studio solution or project
-  publish_nuget: false             # package projects with .nuspec files and push to artifacts
-  publish_nuget_symbols: false     # generate and publish NuGet symbol packages
-
-test: on
+build_script:
+  - build --Configuration:Release --test
